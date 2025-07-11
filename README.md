@@ -1,11 +1,6 @@
 # Brewly - Coffee Shop App
 This is an online coffee shop built in Kotlin using Android Studio.
 
-### Getting Started
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Run the app: `npm start`
-
 ### Key Features
 - User authentication (Sign up/Log in)
 - Coffee menu browsing
