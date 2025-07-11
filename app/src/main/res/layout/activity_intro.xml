@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Root container using ConstraintLayout for flexible positioning -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,6 +9,7 @@
     android:background="@color/darkBrown"
     tools:context=".activity.IntroActivity">
 
+    <!-- Scrollable container to handle content overflow -->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,23 +19,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!-- Main content container arranged vertically -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+             <!-- Hero image at the top of the screen -->
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:src="@drawable/intro_pic" />
 
+            <!-- Content section with gradient background -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/brown_gradient"
                 android:orientation="vertical">
 
+                <!-- Main heading text in orange -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -44,6 +50,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
+                <!-- Subheading text in white -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -54,6 +61,7 @@
                     android:textSize="28sp"
                     android:textStyle="bold" />
 
+                <!-- Call-to-action button positioned at bottom right -->
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/startBtn"
                     android:layout_width="110dp"
@@ -71,7 +79,6 @@
                     android:textStyle="bold" />
 
             </LinearLayout>
-
 
         </LinearLayout>
 
