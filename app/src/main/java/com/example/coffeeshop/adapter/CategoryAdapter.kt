@@ -25,6 +25,7 @@ class CategoryAdapter(val items: MutableList<CategoryModel>) :
     override fun onBindViewHolder(holder: CategoryAdapter.ViewHolder, position: Int) {
         val item = items[position]
         holder.binding.titleCat.text = item.title
+
         holder.binding.root.setOnClickListener {
             lastSelectedPosition = selectedPosition
             selectedPosition = position

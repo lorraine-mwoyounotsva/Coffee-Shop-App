@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "306274290385",
+    "firebase_url": "https://coffeeapp-91f01-default-rtdb.firebaseio.com",
     "project_id": "coffeeapp-91f01",
     "storage_bucket": "coffeeapp-91f01.firebasestorage.app"
   },

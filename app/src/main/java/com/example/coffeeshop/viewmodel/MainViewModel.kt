@@ -13,6 +13,7 @@ import com.google.firebase.database.ValueEventListener
 class MainViewModel : ViewModel() {
     private val firebaseDatabase = FirebaseDatabase.getInstance()
 
+
     private val _category = MutableLiveData<MutableList<CategoryModel>>()
     private val _popular = MutableLiveData<MutableList<ItemsModel>>()
     private val _offer = MutableLiveData<MutableList<ItemsModel>>()

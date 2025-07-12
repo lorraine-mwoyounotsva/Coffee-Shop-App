@@ -1,0 +1,79 @@
+{
+  "Category": [
+    {
+      "id": 0,
+      "title": "Esspersso"
+    },
+    {
+      "id": 1,
+      "title": "Cappuccino"
+    },
+    {
+      "id": 2,
+      "title": "Latte"
+    },
+    {
+      "id": 3,
+      "title": "Americano"
+    },
+    {
+      "id": 4,
+      "title": "Hot Chocolate"
+    }
+  ],
+  "Items": [
+    {
+      "description": "Cappuccino is a traditional Italian coffee drink made with equal parts espresso, steamed milk, and milk foam. It has a strong espresso flavor, balanced by the creamy texture of the steamed milk and the light, airy foam on top. Cappuccinos are often garnished with a sprinkle of cocoa powder or cinnamon.",
+      "extra": "with milk",
+      "picUrl": [
+        "https://firebasestorage.googleapis.com/v0/b/coffeeapp-91f01.firebasestorage.app/o/Cappoccino.jpg?alt=media&token=851b27af-0d9d-40ce-89ee-f6e4c8515e8e"
+      ],
+      "price": 24,
+      "rating": 4.6,
+      "title": "Cappoccino"
+    },
+    {
+      "description": "Espresso is a concentrated form of coffee served in small, strong shots and is the base for many coffee drinks. It is made by forcing a small amount of nearly boiling water through finely-ground coffee beans under high pressure. The result is a rich, robust flavor with a thick, creamy layer on top called crema.",
+      "extra": "with milk",
+      "picUrl": [
+        "https://firebasestorage.googleapis.com/v0/b/coffeeapp-91f01.firebasestorage.app/o/espersso.jpg?alt=media&token=8f3ef2a2-adc7-4ed5-afe1-904dcb16bd2f"
+      ],
+      "price": 22,
+      "rating": 4,
+      "title": "Espersso"
+    },
+    {
+      "description": "Espresso is a concentrated form of coffee served in small,strongshots and is the base for many coffee drinks. It is made by forcing a small amount of nearly boiling water through finely-ground coffee beans under high pressure.The result is a rich, robust flavor with a thick, creamy layer on top called crema",
+      "extra": "with milk",
+      "picUrl": [
+        "https://firebasestorage.googleapis.com/v0/b/coffeeapp-91f01.firebasestorage.app/o/affagato.jpg?alt=media&token=697f20cf-ffdb-446c-9da6-9508dfcb4051"
+      ],
+      "price": 20,
+      "rating": 4.1,
+      "title": "Affagato"
+    }
+  ],
+  "Offers": [
+    {
+      "picUrl": [
+        "https://firebasestorage.googleapis.com/v0/b/coffeeapp-91f01.firebasestorage.app/o/turk.jpg?alt=media&token=15bdd026-cac5-4e6b-b7ec-1eccd1586f44"
+      ],
+      "price": 40,
+      "title": "buy 2 and get 20% off"
+    },
+    {
+      "picUrl": [
+        "https://firebasestorage.googleapis.com/v0/b/coffeeapp-91f01.firebasestorage.app/o/americano.jpg?alt=media&token=45550791-cbbe-4933-b663-c6c32c909214"
+      ],
+      "price": 24,
+      "title": "buy 3 and get 25% off"
+    },
+    {
+      "picUrl": [
+        "https://firebasestorage.googleapis.com/v0/b/coffeeapp-91f01.firebasestorage.app/o/Cappoccino.jpg?alt=media&token=851b27af-0d9d-40ce-89ee-f6e4c8515e8e"
+      ],
+      "price": 60,
+      "title": "buy 3 and get 15% off"
+    }
+  ]
+}

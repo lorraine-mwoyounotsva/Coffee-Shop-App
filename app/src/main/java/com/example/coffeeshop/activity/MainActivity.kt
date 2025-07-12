@@ -3,19 +3,14 @@ package com.example.coffeeshop.activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.coffeeshop.R
 import com.example.coffeeshop.adapter.CategoryAdapter
 import com.example.coffeeshop.adapter.OffersAdapter
 import com.example.coffeeshop.adapter.PopularAdapter
 import com.example.coffeeshop.databinding.ActivityMainBinding
 import com.example.coffeeshop.viewmodel.MainViewModel
+
 
 class MainActivity : BaseActivity() {
 
@@ -46,7 +41,8 @@ class MainActivity : BaseActivity() {
         binding.progressBarOffer.visibility = View.VISIBLE
         viewModel.offer.observe(this, Observer {
             binding.recyclerViewOffer.layoutManager =
-                LinearLayoutManager(this@MainActivity,
+                LinearLayoutManager(
+                    this@MainActivity,
                     LinearLayoutManager.HORIZONTAL,
                     false
                 )
@@ -60,7 +56,8 @@ class MainActivity : BaseActivity() {
         binding.progressBarPopular.visibility = View.VISIBLE
         viewModel.popular.observe(this, Observer {
             binding.recyclerViewPopular.layoutManager =
-                LinearLayoutManager(this@MainActivity,
+                LinearLayoutManager(
+                    this@MainActivity,
                     LinearLayoutManager.HORIZONTAL,
                     false
                 )
@@ -74,7 +71,8 @@ class MainActivity : BaseActivity() {
         binding.progressBarCategory.visibility = View.VISIBLE
         viewModel.category.observe(this, Observer {
             binding.recyclerViewCategory.layoutManager =
-                LinearLayoutManager(this@MainActivity,
+                LinearLayoutManager(
+                    this@MainActivity,
                     LinearLayoutManager.HORIZONTAL,
                     false
                 )

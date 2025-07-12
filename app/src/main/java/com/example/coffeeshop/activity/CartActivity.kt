@@ -1,13 +1,10 @@
 package com.example.coffeeshop.activity
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.coffeeshop.R
 import com.example.coffeeshop.adapter.CartAdapter
 import com.example.coffeeshop.databinding.ActivityCartBinding
 import com.example.coffeeshop.helper.ChangeNumberItemsListener
@@ -30,7 +27,6 @@ class CartActivity : BaseActivity() {
         calculateCart()
         setVariable()
         initCartList()
-
     }
 
     private fun initCartList() {
@@ -44,13 +40,20 @@ class CartActivity : BaseActivity() {
                     override fun onChanged() {
                         calculateCart()
                     }
-
                 })
         }
     }
 
     private fun setVariable() {
         binding.ivBack.setOnClickListener { finish() }
+
+        binding.proceedCheckoutBtn.setOnClickListener {
+            if (management.getListCart().isEmpty()) {
+                Toast.makeText(this, "Your cart is empty", Toast.LENGTH_SHORT).show()
+            } else {
+                startActivity(Intent(this, PaymentActivity::class.java))
+            }
+        }
     }
 
     @SuppressLint("SetTextI18n")
@@ -67,6 +70,5 @@ class CartActivity : BaseActivity() {
             deliveryPriceTxt.text = "$$delivery"
             totalPriceTxt.text = "$$total"
         }
-
     }
 }
